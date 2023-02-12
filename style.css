@@ -529,8 +529,8 @@ img {
 	}
 
 	.featured_title > li + li {
-		font-size: 14px;
-		line-height: 20px;
+		font-size: 13px;
+		line-height: 19px;
 	}
 
 	h2.heading_large {
@@ -540,7 +540,7 @@ img {
 	}
 
 	.gs_reveal > li {
-		font-size: 14px;
-		line-height: 20px;
+		font-size: 13px;
+		line-height: 19px;
 	}
 }
