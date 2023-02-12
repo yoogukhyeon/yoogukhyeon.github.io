@@ -124,11 +124,6 @@ header .navigation > li:hover:after {
 	width: 730px;
 }
 
-/* .content .swiper_box > div {
-	display: flex;
-	justify-content: flex-start;
-} */
-
 .content .swiper_box img {
 	max-width: 150px;
 }
