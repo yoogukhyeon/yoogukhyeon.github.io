@@ -3,74 +3,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 /* 공통 css */
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	box-sizing: border-box;
-	font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 li {
-	list-style: none;
+  list-style: none;
 }
 
 a {
-	text-decoration: none;
-	letter-spacing: 1px;
+  text-decoration: none;
+  letter-spacing: 1px;
 }
 
 #title {
-	color: #161616;
-	font-size: 35px;
-	margin-bottom: 10px;
-	line-height: 41px;
-	font-weight: 700;
-	margin-top: 40px;
+  color: #161616;
+  font-size: 35px;
+  margin-bottom: 10px;
+  line-height: 41px;
+  font-weight: 700;
+  margin-top: 40px;
 }
 
 #sub_title {
-	color: #161616;
-	font-size: 35px;
-	margin-bottom: 10px;
-	line-height: 41px;
-	font-weight: 700;
-	margin-top: 20px;
-}
-
-.change_color {
-	color: #fff !important;
+  color: #161616;
+  font-size: 35px;
+  margin-bottom: 10px;
+  line-height: 41px;
+  font-weight: 700;
+  margin-top: 20px;
 }
 
 #text {
-	font-weight: 500;
-	color: #161616;
-	word-break: break-word;
+  font-weight: 500;
+  color: #161616;
+  word-break: break-word;
 }
 
 #button {
-	display: inline-block;
-	margin-top: 20px;
-	padding: 8px 20px;
-	background-color: #161616;
-	color: #fff;
-	border-radius: 40px;
-	font-weight: 500;
-	transition: 0.3s ease-in-out;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  background-color: #161616;
+  color: #fff;
+  border-radius: 40px;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
 }
 
 #button:hover {
-	background-color: #e51e2a;
-	transform: translateY(-10px);
+  background-color: #e51e2a;
+  transform: translateY(-10px);
 }
 
 @media (max-width: 1400px) {
-	#title {
-		color: #161616 !important;
-	}
+  #title {
+    color: #161616 !important;
+  }
 }
 
 @media (max-width: 991px) {
-	.change_color {
-		color: #161616 !important;
-	}
+  .change_color {
+    color: #161616 !important;
+  }
 }

@@ -12,16 +12,16 @@
     <link rel="stylesheet" href="./common.css" />
   </head>
   <body>
-    <section class="sec_1">
+    <section id="sec1" class="sec_1">
       <div class="circle" data-aos="fade-down-left" data-aos-duration="1800"></div>
       <header data-aos="zoom-in-up" data-aos-duration="2200">
         <a href="#" class="logo">My Portfolio<!-- <img src="./images/logo.png" alt="logo" class="logo" /> --></a>
         <div class="toggle" onclick="toggleMenu()"></div>
         <ul class="navigation">
-          <li onclick="handleNav(1);">Home</li>
-          <li onclick="handleNav(2);">My Project</li>
-          <li onclick="handleNav(3);">My Side Projects</li>
-          <li onclick="handleNav(4);">My Certificate</li>
+          <li class="sec1" onclick="handleNav(1);">Home</li>
+          <li class="sec2" onclick="handleNav(2);">My Project</li>
+          <li class="sec3" onclick="handleNav(3);">My Side Projects</li>
+          <li class="sec4" onclick="handleNav(4);">My Certificate</li>
         </ul>
       </header>
       <div class="content">
@@ -48,7 +48,7 @@
           <!-- <a href="#" id="button">Learn More</a> -->
         </div>
         <div class="swiper_box" data-aos="zoom-in-up" data-aos-duration="2200">
-          <h2 id="title" class="change_color">My Skill</h2>
+          <h2 id="title">My Skill</h2>
           <div class="development">
             <span>Node.js</span>
             <span>Nest.js</span>
@@ -64,7 +64,7 @@
             <span>HTML5</span>
             <span>CSS3</span>
           </div>
-          <h2 id="sub_title" class="change_color">Interasting</h2>
+          <h2 id="sub_title">Interasting</h2>
           <div class="development">
             <span>Java</span>
             <span>Spring Boot</span>
@@ -131,7 +131,7 @@
       </ul>
     </section>
 
-    <section class="sec_2">
+    <section id="sec2" class="sec_2">
       <div class="cInnerContent">
         <h1 class="header-section gs_reveal ipsType_center">Experience</h1>
 
@@ -198,28 +198,39 @@
             </div>
 
             <div class="ipsGrid_span7 ipsType_left">
-              <h2 class="heading_large gs_reveal">Create amazing <strong>SVG</strong> animations</h2>
-              <p class="gs_reveal">
-                <a href="https://greensock.com/drawsvg/">DrawSVGPlugin</a>
-                allows you to progressively reveal (or hide) SVG strokes to make them look like they're being drawn.
-                <a href="https://greensock.com/morphsvg/">MorphSVGPlugin</a> to Morph any SVG shape into any other shape smoothly regardless
-                of the number of points in each.
-                <a href="/docs/v3/Plugins/MotionPathPlugin">MotionPathPlugin</a>
-                allows you to easily move any object along a path.
-              </p>
+              <h2 class="heading_large gs_reveal">사이다 경제 <strong>텐베거</strong> LMS 개발</h2>
+              <ul class="gs_reveal">
+                <li>프로젝트: <b>주식 & 부동산 교육프로그램 LMS 모듈화 개발</b></li>
+                <li>프로젝트 기간: <b>2022.12 ~ 2023.2</b></li>
+                <li>개발 환경: <b>Nest.js, Typescript, Mysql, AWS (Beantalk, s3), Knex, Swagger, Github</b></li>
+                <li>
+                  주요업무:
+                  <b
+                    >AWS Beantalk & ci/cd 인프라 구축, MSA 기반 Rest API 설계 & 구축, DB 쿼리 튜닝, RDB ERD 설계 & 구축, Swagger API
+                    문서화</b
+                  >
+                </li>
+                <li><a href="https://tenbagger.cidermics.com" target="_blank">https://tenbagger.cidermics.com</a></li>
+              </ul>
             </div>
           </div>
 
           <div class="feature feature_right ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
             <div class="ipsGrid_span7 ipsType_right">
-              <h2 class="heading_large gs_reveal">Supercharge immersive <strong>WebGL</strong> experiences</h2>
-              <p class="gs_reveal">
-                GreenSock is used in some of the most popular
-                <a href="//threejs.org/">Three.js</a> powered WebGL projects. Animate any object in a scene.
-                <a href="https://greensock.com/PixiPlugin/">PixiPlugin</a> makes animating <a href="//www.pixijs.com/">Pixi.js</a> objects
-                with GSAP a breeze. Animate position, scale, color effects and more with all the power and control of GSAP and the rendering
-                speed of Pixi.js.
-              </p>
+              <h2 class="heading_large gs_reveal">사이다 경제 <strong>시그널</strong> LMS 개발</h2>
+              <ul class="gs_reveal">
+                <li>프로젝트: <b>주식 교육프로그램 LMS 개발</b></li>
+                <li>프로젝트 기간: <b>2021.12 ~ 2022.6</b></li>
+                <li>개발 환경: <b>AWS Lambda, Mysql, Knex, Next.js, Swr, Github</b></li>
+                <li>
+                  주요업무:
+                  <b
+                    >카카오페이 결제 API 시스템 구축, MSA 기반 Rest API 설계 & 구축, DB 쿼리 튜닝, RDB ERD 설계 & 구축, Next.js 커뮤니티 UI
+                    구축, Frontend API 통신 & 데이터 파싱</b
+                  >
+                </li>
+                <li><a href="https://signal.cidermics.com" target="_blank">https://signal.cidermics.com</a></li>
+              </ul>
             </div>
 
             <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromRight">
@@ -237,25 +248,30 @@
             </div>
 
             <div class="ipsGrid_span7 ipsType_left">
-              <h2 class="heading_large gs_reveal">Control performant <strong>Canvas</strong> animations</h2>
-              <p class="gs_reveal">
-                GSAP makes animating with Canvas even easier by providing an easier way to look and sequence animations. GSAP works great
-                with
-                <a href="//www.adobe.com/products/animate.html">Adobe Animate</a>
-                and <a href="//createjs.com/easeljs">EaseJS</a> through GSAP's
-                <a href="https://greensock.com/easelplugin/">EaselJSPlugin</a>.
-              </p>
+              <h2 class="heading_large gs_reveal">사이다 경제 <strong>금융서비스</strong> 개발</h2>
+              <ul class="gs_reveal">
+                <li>프로젝트: <b>사이다 경제 금융서비스 개발</b></li>
+                <li>프로젝트 기간: <b>2021.11 ~ 2021.12</b></li>
+                <li>개발 환경: <b>React, AWS Lambda, Mysql, Knex </b></li>
+                <li>주요업무: <b>React UI 구축 & 컴포넌트 최적화, Rest API 구축, 데이터 엑셀 자동화</b></li>
+                <li><a href="https://finance.cidermics.com/apply" target="_blank">https://finance.cidermics.com/apply</a></li>
+              </ul>
             </div>
           </div>
 
           <div class="feature feature_right ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
             <div class="ipsGrid_span7 ipsType_right">
-              <h2 class="heading_large gs_reveal"><strong>Award winning</strong> websites</h2>
-              <p class="gs_reveal">
-                GSAP is used on over 8,500,000 sites and over 1,000 sites featured on
-                <a href="https://www.awwwards.com/websites/gsap-animation/" target="_blank">Awwwards</a>. For some of our favorites, check
-                out <a href="https://greensock.com/showcase/">our showcase</a>.
-              </p>
+              <h2 class="heading_large gs_reveal"><strong>사이다 경제</strong> 개발</h2>
+              <ul class="gs_reveal">
+                <li>프로젝트: <b>사이다경제 유지보수 & 기능개발 </b></li>
+                <li>프로젝트 기간: <b>2021.09 ~ 2023.2</b></li>
+                <li>개발 환경: <b>Node.js, Sequelize, Aws EC2, Mysql, Ejs, Jquery, Javascript, Github</b></li>
+                <li>
+                  주요업무:
+                  <b>카카오페이 결제 API 시스템 구축, 클래스 후기 & 댓글 기능 개발, DB 쿼리 튜닝, 배너 자동화 개발, 유지보수 </b>
+                </li>
+                <li><a href="https://cidermics.com" target="_blank">https://cidermics.com</a></li>
+              </ul>
             </div>
 
             <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromRight">
@@ -267,10 +283,10 @@
         </div>
       </div>
     </section>
-    <section class="sec_3">
+    <section id="sec3" class="sec_3">
       <div>second</div>
     </section>
-    <section class="sec_4">
+    <section id="sec4" class="sec_4">
       <div>second</div>
     </section>
     <!-- <section class="sec_fifx">
@@ -327,6 +343,8 @@
         });
       };
 
+      const sectionAll = document.querySelectorAll("section[id]");
+
       document.addEventListener("scroll", function (e) {
         const scrollLocation = document.documentElement.scrollTop;
         const circle = document.querySelector(".circle");
@@ -357,8 +375,22 @@
             navigation[0].style.color = "#fff";
           }
         }
-      });
 
+        // scroll active
+        const scrollY = window.pageYOffset;
+
+        sectionAll.forEach((current) => {
+          const sectionHeight = current.offsetHeight;
+          const sectionTop = current.offsetTop - 50;
+          const sectionId = current.getAttribute("id");
+
+          if (scrollY > sectionTop && scrollY < sectionTop + sectionHeight) {
+            document.querySelector(`.${sectionId}`).classList.add("active");
+          } else {
+            document.querySelector(`.${sectionId}`).classList.remove("active");
+          }
+        });
+      });
       function animateFrom(elem, direction) {
         direction = direction || 1;
         var x = 0,
