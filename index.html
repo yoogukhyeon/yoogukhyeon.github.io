@@ -1,504 +1,579 @@
 <!DOCTYPE html>
 <html lang="ko">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Portfolio project</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio project</title>
 
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-		<link rel="stylesheet" href="./style.css" />
-		<link rel="stylesheet" href="./common.css" />
-	</head>
-	<body>
-		<section id="sec1" class="sec_1">
-			<div class="circle" data-aos="fade-down-left" data-aos-duration="1800"></div>
-			<header data-aos="zoom-in-up" data-aos-duration="2200">
-				<a href="#" class="logo">My Portfolio<!-- <img src="./images/logo.png" alt="logo" class="logo" /> --></a>
-				<div class="toggle" onclick="toggleMenu()"></div>
-				<ul class="navigation">
-					<li class="sec1" onclick="handleNav(1);">Home</li>
-					<li class="sec2" onclick="handleNav(2);">My Project</li>
-					<li class="sec3" onclick="handleNav(3);">My Side Projects</li>
-					<li class="sec4" onclick="handleNav(4);">My Certificate</li>
-				</ul>
-			</header>
-			<div class="content">
-				<div class="text_box" data-aos="zoom-in-up" data-aos-duration="2200">
-					<div class="profile">
-						<img src="./img/profile_p.jpg" alt="profile" />
-					</div>
-					<h2 id="title">유국현</h2>
-					<p id="text">
-						웹/앱 서비스 스타트업 백엔드와 프론트엔드 개발자로 유연하고 능동적인 다양한 경험이 있습니다.
-						<br />
-						<br />
-						Node. JS, Nest. JS, Next. JS, React, Javascript, Typescript, MySQL, MongoDB, AWS, Git, Docker, jQuery 등을 사용하여 프로덕션 서비스를 설계, 개발, 유지보수에 경험으로 더 나은 고객들에게 서비스와 유지보수성이 높은 개발을 하기
-						위해 언제나 노력하고 있습니다. <br />
-						<br />
-						새로운 것과 배움에 관심이 많아 오픈 소스 코드를 보는 것에 관심이 많고, 노력합니다. 이외에도 개발 블로그를 첫 개발자 경력부터 시작하면서 100여 개의 개발 기술 포스트를 작성했으며 언젠가 최고의 서비스를 개발하고자 하는 목표로
-						다양한 기술을 학습하며 경험을 쌓고 있습니다. <br /><br />
-						서비스 개발이란 결국 개발과 비즈니스, 고객 입장에서의 생각, 팀원과 커뮤니케이션이 가장 중요하다고 생각하고 있습니다. 능동적이고 적극적인 커뮤니케이션으로 문제 해결과 더 나은 비즈니스를 위해 노력하고 이러한 노력을 바탕으로 더
-						좋은 개발자로서 성장하기 위해 더 학습하고, 경험하고, 노력 하고 있습니다.
-					</p>
-					<!-- <a href="#" id="button">Learn More</a> -->
-				</div>
-				<div class="swiper_box" data-aos="zoom-in-up" data-aos-duration="2200">
-					<h2 id="title">My Skill</h2>
-					<div class="development">
-						<span>Node.js</span>
-						<span>Nest.js</span>
-						<span>React.js</span>
-						<span>Next.js</span>
-						<span>Javascript</span>
-						<span>Typescript</span>
-						<span>Jquery</span>
-						<span>Aws</span>
-						<span>Docker</span>
-						<span>MySQL</span>
-						<span>MogoDB</span>
-						<span>HTML5</span>
-						<span>CSS3</span>
-					</div>
-					<h2 id="sub_title">Interasting</h2>
-					<div class="development">
-						<span>Java</span>
-						<span>Spring Boot</span>
-						<span>Redis</span>
-					</div>
-					<div>
-						<div class="swiper mySwiper">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<img src="./img/nodejs_p.png" alt="사진1" />
-								</div>
-								<div class="swiper-slide swiper_black_nest_bg">
-									<img src="./img/nest_p.png" alt="사진4" />
-								</div>
-								<div class="swiper-slide">
-									<img src="./img/react_p.png" alt="사진2" />
-								</div>
-								<div class="swiper-slide swiper_black_bg">
-									<img src="./img/next_p.png" alt="사진3" />
-								</div>
-								<div class="swiper-slide">
-									<img src="./img/aws_p.png" alt="사진5" />
-								</div>
-								<div class="swiper-slide">
-									<img src="./img/docker_p.jpg" alt="사진5" />
-								</div>
-								<div class="swiper-slide">
-									<img src="./img/mysql_p.png" alt="사진6" />
-								</div>
-								<div class="swiper-slide">
-									<img src="./img/mongodb_p.png" alt="사진7" />
-								</div>
-								<div class="swiper-slide">
-									<img src="./img/javascript_p.png" alt="사진8" />
-								</div>
-								<div class="swiper-slide">
-									<img src="./img/typescript_p.png" alt="사진9" />
-								</div>
-								<div class="swiper-slide">
-									<img src="./img/jquery_p.png" alt="사진10" />
-								</div>
-								<div class="swiper-slide">
-									<img src="./img/HTML5_p.png" alt="사진11" />
-								</div>
-								<div class="swiper-slide">
-									<img src="./img/css_p.jpg" alt="사진12" />
-								</div>
-							</div>
-							<div class="swiper-pagination"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<ul class="sci" data-aos="zoom-in-up" data-aos-offset="-100" data-aos-duration="2300">
-				<li>
-					<a href="https://cometruedream.tistory.com/" target="_blank"><img src="./img/tistory_p.svg" alt="tistory" /></a>
-				</li>
-				<li>
-					<a href="https://github.com/yoogukhyeon" target="_blank"><img src="./img/git_p.svg" alt="git" /></a>
-				</li>
-				<li>
-					<a href="https://www.instagram.com/dbrnrgusdlek22" target="_blank"><img src="./img/instagram.png" alt="instagram" /></a>
-				</li>
-			</ul>
-		</section>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./common.css" />
+  </head>
+  <body>
+    <section id="sec1" class="sec_1">
+      <div class="circle" data-aos="fade-down-left" data-aos-duration="1800"></div>
+      <header data-aos="zoom-in-up" data-aos-duration="2200">
+        <a href="#" class="logo">My Portfolio<!-- <img src="./images/logo.png" alt="logo" class="logo" /> --></a>
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <ul class="navigation">
+          <li class="sec1" onclick="handleNav(1);">Home</li>
+          <li class="sec2" onclick="handleNav(2);">Project</li>
+          <li class="sec3" onclick="handleNav(3);">Side Projects</li>
+          <li class="sec4" onclick="handleNav(4);">Certificate</li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="text_box" data-aos="zoom-in-up" data-aos-duration="2200">
+          <div class="profile">
+            <img src="./img/profile_p.jpg" alt="profile" />
+          </div>
+          <h2 id="title">유국현</h2>
+          <p id="text">
+            웹/앱 서비스 스타트업 백엔드와 프론트엔드 개발자로 유연하고 능동적인 다양한 경험이 있습니다.
+            <br />
+            <br />
+            Node. JS, Nest. JS, Next. JS, React, Javascript, Typescript, MySQL, MongoDB, AWS, Git, Docker, jQuery 등을 사용하여 프로덕션
+            서비스를 설계, 개발, 유지보수에 경험으로 더 나은 고객들에게 서비스와 유지보수성이 높은 개발을 하기 위해 언제나 노력하고
+            있습니다. <br />
+            <br />
+            새로운 것과 배움에 관심이 많아 오픈 소스 코드를 보는 것에 관심이 많고, 노력합니다. 이외에도 개발 블로그를 첫 개발자 경력부터
+            시작하면서 100여 개의 개발 기술 포스트를 작성했으며 언젠가 최고의 서비스를 개발하고자 하는 목표로 다양한 기술을 학습하며 경험을
+            쌓고 있습니다. <br /><br />
+            서비스 개발이란 결국 개발과 비즈니스, 고객 입장에서의 생각, 팀원과 커뮤니케이션이 가장 중요하다고 생각하고 있습니다. 능동적이고
+            적극적인 커뮤니케이션으로 문제 해결과 더 나은 비즈니스를 위해 노력하고 이러한 노력을 바탕으로 더 좋은 개발자로서 성장하기 위해
+            더 학습하고, 경험하고, 노력 하고 있습니다.
+          </p>
+          <!-- <a href="#" id="button">Learn More</a> -->
+        </div>
+        <div class="swiper_box" data-aos="zoom-in-up" data-aos-duration="2200">
+          <h2 id="title">My Skill</h2>
+          <div class="development">
+            <span>Node.js</span>
+            <span>Nest.js</span>
+            <span>React.js</span>
+            <span>Next.js</span>
+            <span>Javascript</span>
+            <span>Typescript</span>
+            <span>Jquery</span>
+            <span>Aws</span>
+            <span>Docker</span>
+            <span>MySQL</span>
+            <span>MogoDB</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
+          </div>
+          <h2 id="sub_title">Interasting</h2>
+          <div class="development">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>Redis</span>
+          </div>
+          <div>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./img/nodejs_p.png" alt="사진1" />
+                </div>
+                <div class="swiper-slide swiper_black_nest_bg">
+                  <img src="./img/nest_p.png" alt="사진4" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/react_p.png" alt="사진2" />
+                </div>
+                <div class="swiper-slide swiper_black_bg">
+                  <img src="./img/next_p.png" alt="사진3" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/aws_p.png" alt="사진5" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/docker_p.jpg" alt="사진5" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/mysql_p.png" alt="사진6" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/mongodb_p.png" alt="사진7" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/javascript_p.png" alt="사진8" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/typescript_p.png" alt="사진9" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/jquery_p.png" alt="사진10" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/HTML5_p.png" alt="사진11" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/css_p.jpg" alt="사진12" />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="sci" data-aos="zoom-in-up" data-aos-offset="-100" data-aos-duration="2300">
+        <li>
+          <a href="https://cometruedream.tistory.com/" target="_blank"><img src="./img/tistory_p.svg" alt="tistory" /></a>
+        </li>
+        <li>
+          <a href="https://github.com/yoogukhyeon" target="_blank"><img src="./img/git_p.svg" alt="git" /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/dbrnrgusdlek22" target="_blank"><img src="./img/instagram.png" alt="instagram" /></a>
+        </li>
+      </ul>
+    </section>
 
-		<section id="sec2" class="sec_2">
-			<div class="cInnerContent">
-				<h1 class="header-section gs_reveal ipsType_center">Experience</h1>
+    <section id="sec2" class="sec_2">
+      <div class="cInnerContent">
+        <h1 class="header-section gs_reveal ipsType_center">Experience</h1>
 
-				<div class="features">
-					<div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone" style="margin-bottom: 40px">
-						<div class="featured-image-container experience ipsGrid_span5 gs_reveal gs_reveal_fromLeft">
-							<ul class="featured_title">
-								<li>사이다 경제</li>
-								<li>백엔드 개발자</li>
-								<li>2021.09.08 ~ 현재</li>
-								<li>
-									<a class="featured_link" href="https://cidermics.com" target="_blank">https://cidermics.com</a>
-								</li>
-							</ul>
-						</div>
+        <div class="features">
+          <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone" style="margin-bottom: 40px">
+            <div class="featured-image-container experience ipsGrid_span5 gs_reveal gs_reveal_fromLeft">
+              <ul class="featured_title">
+                <li>사이다 경제</li>
+                <li>백엔드 개발자</li>
+                <li>2021.09.08 ~ 현재</li>
+                <li>
+                  <a class="featured_link" href="https://cidermics.com" target="_blank">https://cidermics.com</a>
+                </li>
+              </ul>
+            </div>
 
-						<div class="ipsGrid_span7 ipsType_left">
-							<h2 class="heading_large gs_reveal">회원 20만 <strong>경제 교육 시스템</strong> 서비스</h2>
-							<ul class="gs_reveal">
-								<li>새로운 신규 경제 교육 서비스 기획, 개발</li>
-								<li>AWS 인프라 구축(Lambda, Beantalk)</li>
-								<li>MSA기반 API 설계, 개발</li>
-								<li>Restful API Swagger 문서화</li>
-								<li>Mysql RDBMS 설계, 쿼리 튜닝, 운영</li>
-								<li>기존 서비스 유지보수, 기능개발</li>
-							</ul>
-						</div>
-					</div>
+            <div class="ipsGrid_span7 ipsType_left">
+              <h2 class="heading_large gs_reveal">회원 20만 <strong>경제 교육 시스템</strong> 서비스</h2>
+              <ul class="gs_reveal">
+                <li>새로운 신규 경제 교육 서비스 기획, 개발</li>
+                <li>AWS 인프라 구축(Lambda, Beantalk)</li>
+                <li>MSA기반 API 설계, 개발</li>
+                <li>Restful API Swagger 문서화</li>
+                <li>Mysql RDBMS 설계, 쿼리 튜닝, 운영</li>
+                <li>기존 서비스 유지보수, 기능개발</li>
+              </ul>
+            </div>
+          </div>
 
-					<div class="feature feature_right ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
-						<div class="ipsGrid_span7 ipsType_right">
-							<h2 class="heading_large gs_reveal">SI <strong>업체</strong></h2>
-							<ul class="gs_reveal">
-								<li></li>
-								<li>'인하대병원 행동발달 증진센터' PC/MO 퍼블리싱</li>
-								<li>'스노우피크' 반응형 퍼블리싱</li>
-								<li>'웅진식품' 랜딩페이지 퍼블리싱 & 회원데이터 관리</li>
-								<li>'보령제약' 백오피스 캔버스를 활용한 스샷 기능 개발</li>
-								<li>'두피부' 카페24 이커머스 퍼블리싱</li>
-								<li>신규 서비스 기획 & 퍼블리싱</li>
-							</ul>
-						</div>
-						<div class="featured-image-container experience ipsGrid_span5 gs_reveal gs_reveal_fromRight">
-							<ul class="featured_title" style="text-align: right">
-								<li>Made Web</li>
-								<li>(Cafe24 협력업체)</li>
-								<li>프론트 개발자 & 퍼블리셔</li>
-								<li>2021.03.06 ~ 2021.09.01</li>
-								<li>
-									<a class="featured_link" href="http://www.madeweb.co.kr" target="_blank">http://www.madeweb.co.kr</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
+          <div class="feature feature_right ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
+            <div class="ipsGrid_span7 ipsType_right">
+              <h2 class="heading_large gs_reveal">SI <strong>업체</strong></h2>
+              <ul class="gs_reveal">
+                <li></li>
+                <li>'인하대병원 행동발달 증진센터' PC/MO 퍼블리싱</li>
+                <li>'스노우피크' 반응형 퍼블리싱</li>
+                <li>'웅진식품' 랜딩페이지 퍼블리싱 & 회원데이터 관리</li>
+                <li>'보령제약' 백오피스 캔버스를 활용한 스샷 기능 개발</li>
+                <li>'두피부' 카페24 이커머스 퍼블리싱</li>
+                <li>신규 서비스 기획 & 퍼블리싱</li>
+              </ul>
+            </div>
+            <div class="featured-image-container experience ipsGrid_span5 gs_reveal gs_reveal_fromRight">
+              <ul class="featured_title" style="text-align: right">
+                <li>Made Web</li>
+                <li>(Cafe24 협력업체)</li>
+                <li>프론트 개발자 & 퍼블리셔</li>
+                <li>2021.03.06 ~ 2021.09.01</li>
+                <li>
+                  <a class="featured_link" href="http://www.madeweb.co.kr" target="_blank">http://www.madeweb.co.kr</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-				<h1 class="header-section gs_reveal ipsType_center">Projects</h1>
-				<div class="features">
-					<div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
-						<div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromLeft">
-							<div class="card">
-								<img width="479" src="img/tenbagger.gif" alt="tenbagger projects" />
-							</div>
-						</div>
+        <h1 class="header-section gs_reveal ipsType_center">Projects</h1>
+        <div class="features">
+          <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
+            <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromLeft">
+              <a href="https://tenbagger.cidermics.com" target="_blank"
+                ><div class="card">
+                  <img width="479" src="img/tenbagger.gif" alt="tenbagger projects" />
+                </div>
+              </a>
+            </div>
 
-						<div class="ipsGrid_span7 ipsType_left">
-							<h2 class="heading_large gs_reveal">사이다 경제 <strong>텐베거</strong> LMS 개발</h2>
-							<ul class="gs_reveal">
-								<li>프로젝트: <b>주식 & 부동산 교육프로그램 LMS 모듈화 개발</b></li>
-								<li>프로젝트 기간: <b>2022.12 ~ 2023.2</b></li>
-								<li>개발 환경: <b>Nest.js, Typescript, Mysql, AWS (Beantalk, s3), Knex, Swagger, Github</b></li>
-								<li>
-									주요업무:
-									<b>AWS Beantalk & ci/cd 인프라 구축, MSA 기반 Rest API 설계 & 구축, DB 쿼리 튜닝, RDB ERD 설계 & 구축, Swagger API 문서화</b>
-								</li>
-								<li><a href="https://tenbagger.cidermics.com" target="_blank">https://tenbagger.cidermics.com</a></li>
-							</ul>
-						</div>
-					</div>
+            <div class="ipsGrid_span7 ipsType_left">
+              <h2 class="heading_large gs_reveal">사이다 경제 <strong>텐베거</strong> LMS 개발</h2>
+              <ul class="gs_reveal">
+                <li>프로젝트: <b>주식 & 부동산 교육프로그램 LMS 모듈화 개발</b></li>
+                <li>프로젝트 기간: <b>2022.12 ~ 2023.2</b></li>
+                <li>개발 환경: <b>Nest.js, Typescript, Mysql, AWS (Beantalk, s3), Knex, Swagger, Github</b></li>
+                <li>
+                  주요업무:
+                  <b
+                    >AWS Beantalk & ci/cd 인프라 구축, MSA 기반 Rest API 설계 & 구축, DB 쿼리 튜닝, RDB ERD 설계 & 구축, Swagger API
+                    문서화</b
+                  >
+                </li>
+                <li><a href="https://tenbagger.cidermics.com" target="_blank">https://tenbagger.cidermics.com</a></li>
+              </ul>
+            </div>
+          </div>
 
-					<div class="feature feature_right ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
-						<div class="ipsGrid_span7 ipsType_right">
-							<h2 class="heading_large gs_reveal">사이다 경제 <strong>시그널</strong> LMS 개발</h2>
-							<ul class="gs_reveal">
-								<li>프로젝트: <b>주식 교육프로그램 LMS 개발</b></li>
-								<li>프로젝트 기간: <b>2021.12 ~ 2022.6</b></li>
-								<li>개발 환경: <b>AWS Lambda, Mysql, Knex, Next.js, Swr, Github</b></li>
-								<li>
-									주요업무:
-									<b>카카오페이 결제 API 시스템 구축, MSA 기반 Rest API 설계 & 구축, DB 쿼리 튜닝, RDB ERD 설계 & 구축, Next.js 커뮤니티 UI 구축, Frontend API 통신 & 데이터 파싱</b>
-								</li>
-								<li><a href="https://signal.cidermics.com" target="_blank">https://signal.cidermics.com</a></li>
-							</ul>
-						</div>
+          <div class="feature feature_right ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
+            <div class="ipsGrid_span7 ipsType_right">
+              <h2 class="heading_large gs_reveal">사이다 경제 <strong>시그널</strong> LMS 개발</h2>
+              <ul class="gs_reveal">
+                <li>프로젝트: <b>주식 교육프로그램 LMS 개발</b></li>
+                <li>프로젝트 기간: <b>2021.12 ~ 2022.6</b></li>
+                <li>개발 환경: <b>AWS Lambda, Mysql, Knex, Next.js, Swr, Github</b></li>
+                <li>
+                  주요업무:
+                  <b
+                    >카카오페이 결제 API 시스템 구축, MSA 기반 Rest API 설계 & 구축, DB 쿼리 튜닝, RDB ERD 설계 & 구축, Next.js 커뮤니티 UI
+                    구축, Frontend API 통신 & 데이터 파싱</b
+                  >
+                </li>
+                <li><a href="https://signal.cidermics.com" target="_blank">https://signal.cidermics.com</a></li>
+              </ul>
+            </div>
 
-						<div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromRight">
-							<div class="card">
-								<img width="479" src="./img/signal.gif" alt="signal projects" />
-							</div>
-						</div>
-					</div>
+            <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromRight">
+              <a href="https://signal.cidermics.com" target="_blank"
+                ><div class="card">
+                  <img width="479" src="./img/signal.gif" alt="signal projects" />
+                </div>
+              </a>
+            </div>
+          </div>
 
-					<div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
-						<div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromLeft">
-							<div class="card">
-								<img width="479" src="./img/cidermics_finances.gif" alt="finances projects" />
-							</div>
-						</div>
+          <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
+            <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromLeft">
+              <a href="https://finance.cidermics.com/apply" target="_blank">
+                <div class="card">
+                  <img width="479" src="./img/cidermics_finances.gif" alt="finances projects" />
+                </div>
+              </a>
+            </div>
 
-						<div class="ipsGrid_span7 ipsType_left">
-							<h2 class="heading_large gs_reveal">사이다 경제 <strong>금융서비스</strong> 개발</h2>
-							<ul class="gs_reveal">
-								<li>프로젝트: <b>사이다 경제 금융서비스 개발</b></li>
-								<li>프로젝트 기간: <b>2021.11 ~ 2021.12</b></li>
-								<li>개발 환경: <b>React, AWS Lambda, Mysql, Knex </b></li>
-								<li>주요업무: <b>React UI 구축 & 컴포넌트 최적화, Rest API 구축, 데이터 엑셀 자동화</b></li>
-								<li><a href="https://finance.cidermics.com/apply" target="_blank">https://finance.cidermics.com/apply</a></li>
-							</ul>
-						</div>
-					</div>
+            <div class="ipsGrid_span7 ipsType_left">
+              <h2 class="heading_large gs_reveal">사이다 경제 <strong>금융서비스</strong> 개발</h2>
+              <ul class="gs_reveal">
+                <li>프로젝트: <b>사이다 경제 금융서비스 개발</b></li>
+                <li>프로젝트 기간: <b>2021.11 ~ 2021.12</b></li>
+                <li>개발 환경: <b>React, AWS Lambda, Mysql, Knex </b></li>
+                <li>주요업무: <b>React UI 구축 & 컴포넌트 최적화, Rest API 구축, 데이터 엑셀 자동화</b></li>
+                <li><a href="https://finance.cidermics.com/apply" target="_blank">https://finance.cidermics.com/apply</a></li>
+              </ul>
+            </div>
+          </div>
 
-					<div class="feature feature_right ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
-						<div class="ipsGrid_span7 ipsType_right">
-							<h2 class="heading_large gs_reveal"><strong>사이다 경제</strong> 개발</h2>
-							<ul class="gs_reveal">
-								<li>프로젝트: <b>사이다경제 유지보수 & 기능개발 </b></li>
-								<li>프로젝트 기간: <b>2021.09 ~ 2023.2</b></li>
-								<li>개발 환경: <b>Node.js, Sequelize, Aws EC2, Mysql, Ejs, Jquery, Javascript, Github</b></li>
-								<li>
-									주요업무:
-									<b>카카오페이 결제 API 시스템 구축, 클래스 후기 & 댓글 기능 개발, DB 쿼리 튜닝, 배너 자동화 개발, 유지보수 </b>
-								</li>
-								<li><a href="https://cidermics.com" target="_blank">https://cidermics.com</a></li>
-							</ul>
-						</div>
+          <div class="feature feature_right ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
+            <div class="ipsGrid_span7 ipsType_right">
+              <h2 class="heading_large gs_reveal"><strong>사이다 경제</strong> 개발</h2>
+              <ul class="gs_reveal">
+                <li>프로젝트: <b>사이다경제 유지보수 & 기능개발 </b></li>
+                <li>프로젝트 기간: <b>2021.09 ~ 2023.2</b></li>
+                <li>개발 환경: <b>Node.js, Sequelize, Aws EC2, Mysql, Ejs, Jquery, Javascript, Github</b></li>
+                <li>
+                  주요업무:
+                  <b>카카오페이 결제 API 시스템 구축, 클래스 후기 & 댓글 기능 개발, DB 쿼리 튜닝, 배너 자동화 개발, 유지보수 </b>
+                </li>
+                <li><a href="https://cidermics.com" target="_blank">https://cidermics.com</a></li>
+              </ul>
+            </div>
 
-						<div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromRight">
-							<div class="card">
-								<img width="479" src="./img/cidermics.gif" alt="cidermics projects" />
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="sec3" class="sec_3">
-			<div>
-				<h1 class="side_title">My Projects</h1>
-				<div class="side_wrap">
-					<h2 class="side_sub_title" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">커뮤니티 <span>(운영)</span></h2>
-					<div class="side_img_wrap">
-						<ul>
-							<li data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-								<img src="./img/cidermics.gif" alt="" />
-							</li>
-							<li data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"><img src="./img/signal.gif" alt="" /></li>
-							<li data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-								<img src="./img/snowpeak.gif" alt="" />
-							</li>
-						</ul>
-					</div>
-					<div class="side_info" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1800">
-						<ul>
-							<li>프로젝트: <b>커뮤니티</b></li>
-							<li>프로젝트 기간: <b>2022.12 ~ 2023.3</b></li>
-							<li>개발 환경 Front: <b>React, React-query, Aws EC2, Nginx, CI/CD, Gitflow</b></li>
-							<li>개발 환경: Backend <b>Node.js, Cafe24 Node.js 호스팅, Sequelize, Swagger, Mysql, Github</b></li>
-							<li>
-								Front 주요업무:
-								<b>React 컴포넌트를 활용해서 UI 설계 & 작업, React-query 데이터 패칭, EC2 Nignx 활용한 React 배포, Gitflow 활요해서 CI/CD 구축, S3 이미지 데이터 저장</b>
-							</li>
-							<li>
-								Backend 주요업무:
-								<b>Node.js, Mysql RDB ERD 설계, Sequelize 활용한 DB 마이그레이션, MSA 기반 Rest Api 설계 & 구축, Swagger 문서화, Youtube API 활용해서 데이터 파싱</b>
-							</li>
-							<li><a href="https://signal.cidermics.com" target="_blank">https://signal.cidermics.com</a></li>
-						</ul>
-					</div>
-				</div>
+            <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromRight">
+              <a href="https://cidermics.com" target="_blank"
+                ><div class="card">
+                  <img width="479" src="./img/cidermics.gif" alt="cidermics projects" /></div
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sec3" class="sec_3">
+      <div>
+        <h1 class="side_title">My Projects</h1>
+        <div class="side_wrap">
+          <h2 class="side_sub_title" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+            커뮤니티 <span>(운영)</span>
+          </h2>
+          <div class="side_img_wrap">
+            <ul>
+              <li data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+                <img src="./img/cidermics.gif" alt="" />
+              </li>
+              <li data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500"><img src="./img/signal.gif" alt="" /></li>
+              <li data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+                <img src="./img/snowpeak.gif" alt="" />
+              </li>
+            </ul>
+          </div>
+          <div class="side_info" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1400">
+            <ul>
+              <li>프로젝트: <b>커뮤니티</b></li>
+              <li>프로젝트 기간: <b>2022.12 ~ 2023.3</b></li>
+              <li>개발 환경 Front: <b>React, React-query, Aws EC2, Nginx, CI/CD, Gitflow</b></li>
+              <li>개발 환경: Backend <b>Node.js, Cafe24 Node.js 호스팅, Sequelize, Swagger, Mysql, Github</b></li>
+              <li>
+                Front 주요업무:
+                <b
+                  >React 컴포넌트를 활용해서 UI 설계 & 작업, React-query 데이터 패칭, EC2 Nignx 활용한 React 배포, Gitflow 활요해서 CI/CD
+                  구축, S3 이미지 데이터 저장</b
+                >
+              </li>
+              <li>
+                Backend 주요업무:
+                <b
+                  >Node.js, Mysql RDB ERD 설계, Sequelize 활용한 DB 마이그레이션, MSA 기반 Rest Api 설계 & 구축, Swagger 문서화, Youtube API
+                  활용해서 데이터 파싱</b
+                >
+              </li>
+              <li><a href="https://signal.cidermics.com" target="_blank">https://signal.cidermics.com</a></li>
+            </ul>
+          </div>
+        </div>
 
-				<div class="side_wrap">
-					<h2 class="side_sub_title" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">랜딩페이지<span>(운영)</span></h2>
-					<div class="side_wrap">
-						<div class="side_img_wrap side_img_first">
-							<ul>
-								<li data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-									<img src="./img/cidermics.gif" alt="" />
-								</li>
-							</ul>
-						</div>
-						<div class="side_info" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1800">
-							<ul>
-								<li>프로젝트: <b>랜딩페이지</b></li>
-								<li>프로젝트 기간: <b>2022.6 ~ 2022.8</b></li>
-								<li>개발 환경 Front: <b>Html5, Css3, Javascript, Jquery, Kakao API, FTP 호스팅</b></li>
-								<li>개발 환경: Backend <b>Node.js, Cafe24 Node.js 호스팅, Sequelize, Mysql, Github</b></li>
-								<li>
-									Front 주요업무:
-									<b>Html5 & Css3 UI 설계 & 구축, Javascript 기능구현, Ajax 데이터 파싱, 카카오 채널 연동</b>
-								</li>
-								<li>
-									Backend 주요업무:
-									<b>Node.js, Rest API 설계 & 구축</b>
-								</li>
-								<li><a href="https://signal.cidermics.com" target="_blank">https://signal.cidermics.com</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="sec4" class="sec_4">
-			<div>second</div>
-		</section>
-		<!-- <section class="sec_fifx">
+        <div class="side_wrap">
+          <h2 class="side_sub_title" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+            랜딩페이지<span>(운영)</span>
+          </h2>
+          <div class="side_wrap">
+            <div class="side_img_wrap side_img_first">
+              <ul>
+                <li data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+                  <img src="./img/cidermics.gif" alt="" />
+                </li>
+              </ul>
+            </div>
+            <div class="side_info" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1400">
+              <ul>
+                <li>프로젝트: <b>랜딩페이지</b></li>
+                <li>프로젝트 기간: <b>2022.6 ~ 2022.8</b></li>
+                <li>개발 환경 Front: <b>Html5, Css3, Javascript, Jquery, Kakao API, FTP 호스팅</b></li>
+                <li>개발 환경: Backend <b>Node.js, Cafe24 Node.js 호스팅, Sequelize, Mysql, Github</b></li>
+                <li>
+                  Front 주요업무:
+                  <b>Html5 & Css3 UI 설계 & 구축, Javascript 기능구현, Ajax 데이터 파싱, 카카오 채널 연동</b>
+                </li>
+                <li>
+                  Backend 주요업무:
+                  <b>Node.js, Rest API 설계 & 구축</b>
+                </li>
+                <li><a href="https://signal.cidermics.com" target="_blank">https://signal.cidermics.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sec4" class="sec_4">
+      <div class="certi_wrap">
+        <h1 class="side_title">My Certificate</h1>
+        <ul class="certi_box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+          <li>
+            <div class="certi_info">
+              <div class="certi_date featured_sub_title">2022.08</div>
+              <div class="certi_txt featured_title">
+                <em>AwsCloudPractitioner</em>
+                <span class="featured_from">AWS</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="certi_info">
+              <div class="certi_date featured_sub_title">2022.06</div>
+              <div class="certi_txt featured_title">
+                <em>리눅스마스터 2급</em>
+                <span class="featured_from">(사)한국정보통신진흥협회</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="certi_info">
+              <div class="certi_date featured_sub_title">2022.05</div>
+              <div class="certi_txt featured_title">
+                <em>네트워크관리사 2급</em>
+                <span class="featured_from">한국정보통신자격협회</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="certi_info">
+              <div class="certi_date featured_sub_title">2022.02</div>
+              <div class="certi_txt featured_title">
+                <em>SQL 개발자</em>
+                <span class="featured_from">한국데이터산업징흥원</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="certi_info">
+              <div class="certi_date featured_sub_title">2019.11</div>
+              <div class="certi_txt featured_title">
+                <em>(국가공인)한국사능력검정시험 3급</em>
+                <span class="featured_from">국사편찬위원회</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- <section class="sec_fifx">
 			<div>second</div>
 		</section> -->
 
-		<!-- Initialize Swiper -->
-		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
 
-		<script>
-			AOS.init();
+    <script>
+      AOS.init();
 
-			var swiper = new Swiper('.mySwiper', {
-				effect: 'coverflow',
-				grabCursor: true,
-				centeredSlides: true,
-				slidesPerView: 'auto',
-				coverflowEffect: {
-					rotate: 0,
-					stretch: 0,
-					depth: 200,
-					modifier: 1,
-					slideShadows: true,
-				},
-				pagination: {
-					el: '.swiper-pagination',
-				},
-				loop: true,
-				autoplay: {
-					delay: 2200,
-					disableOnInteraction: false,
-				},
-			});
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 200,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        loop: true,
+        autoplay: {
+          delay: 2200,
+          disableOnInteraction: false,
+        },
+      });
 
-			function toggleMenu() {
-				const menuToggle = document.querySelector('.toggle');
-				const navigationToggle = document.querySelector('.navigation');
-				menuToggle.classList.toggle('active');
-				navigationToggle.classList.toggle('active');
-			}
+      function toggleMenu() {
+        const menuToggle = document.querySelector(".toggle");
+        const navigationToggle = document.querySelector(".navigation");
+        menuToggle.classList.toggle("active");
+        navigationToggle.classList.toggle("active");
+      }
 
-			const handleNav = (idx) => {
-				const target = document.querySelector(`.sec_${idx}`);
-				const targetTop = target.offsetTop;
+      const handleNav = (idx) => {
+        const target = document.querySelector(`.sec_${idx}`);
+        const targetTop = target.offsetTop;
 
-				window.scrollTo({
-					top: targetTop,
-					left: 0,
-					behavior: 'smooth',
-				});
-			};
+        window.scrollTo({
+          top: targetTop,
+          left: 0,
+          behavior: "smooth",
+        });
+      };
 
-			const sectionAll = document.querySelectorAll('section[id]');
+      const sectionAll = document.querySelectorAll("section[id]");
 
-			document.addEventListener('scroll', function (e) {
-				const scrollLocation = document.documentElement.scrollTop;
-				const circle = document.querySelector('.circle');
-				const navigation = document.querySelectorAll('.navigation');
-				const logo = document.querySelectorAll('.logo');
-				const toggle = document.querySelectorAll('.toggle');
+      document.addEventListener("scroll", function (e) {
+        const scrollLocation = document.documentElement.scrollTop;
+        const circle = document.querySelector(".circle");
+        const navigation = document.querySelectorAll(".navigation");
+        const logo = document.querySelectorAll(".logo");
+        const toggle = document.querySelectorAll(".toggle");
 
-				if (window.innerWidth < 1020) {
-					if (scrollLocation > 350) {
-						logo[0].style.color = '#161616';
-						toggle[0].style.filter = 'invert(1)';
-					} else {
-						logo[0].style.color = '#161616';
-						toggle[0].style.filter = 'invert(0)';
-					}
-				} else if (window.innerWidth < 400) {
-					if (scrollLocation > 350) {
-						logo[0].style.color = '#161616';
-						toggle[0].style.filter = 'invert(1)';
-					} else {
-						logo[0].style.color = '#161616';
-						toggle[0].style.filter = 'invert(0)';
-					}
-				} else {
-					if (scrollLocation > circle.offsetHeight - 200) {
-						navigation[0].style.color = '#161616';
-					} else {
-						navigation[0].style.color = '#fff';
-					}
-				}
+        if (window.innerWidth < 1020) {
+          if (scrollLocation > 350) {
+            logo[0].style.color = "#161616";
+            toggle[0].style.filter = "invert(1)";
+          } else {
+            logo[0].style.color = "#161616";
+            toggle[0].style.filter = "invert(0)";
+          }
+        } else if (window.innerWidth < 400) {
+          if (scrollLocation > 350) {
+            logo[0].style.color = "#161616";
+            toggle[0].style.filter = "invert(1)";
+          } else {
+            logo[0].style.color = "#161616";
+            toggle[0].style.filter = "invert(0)";
+          }
+        } else {
+          if (scrollLocation > circle.offsetHeight - 200) {
+            navigation[0].style.color = "#161616";
+          } else {
+            navigation[0].style.color = "#fff";
+          }
+        }
 
-				// scroll active
-				const scrollY = window.pageYOffset;
+        // scroll active
+        const scrollY = window.pageYOffset;
 
-				sectionAll.forEach((current) => {
-					const sectionHeight = current.offsetHeight;
-					const sectionTop = current.offsetTop - 50;
-					const sectionId = current.getAttribute('id');
+        sectionAll.forEach((current) => {
+          const sectionHeight = current.offsetHeight;
+          const sectionTop = current.offsetTop - 50;
+          const sectionId = current.getAttribute("id");
 
-					if (scrollY > sectionTop && scrollY < sectionTop + sectionHeight) {
-						document.querySelector(`.${sectionId}`).classList.add('active');
-					} else {
-						document.querySelector(`.${sectionId}`).classList.remove('active');
-					}
-				});
-			});
-			function animateFrom(elem, direction) {
-				direction = direction || 1;
-				var x = 0,
-					y = direction * 100;
-				if (elem.classList.contains('gs_reveal_fromLeft')) {
-					x = -100;
-					y = 0;
-				} else if (elem.classList.contains('gs_reveal_fromRight')) {
-					x = 100;
-					y = 0;
-				}
-				elem.style.transform = 'translate(' + x + 'px, ' + y + 'px)';
-				elem.style.opacity = '0';
-				gsap.fromTo(
-					elem,
-					{ x: x, y: y, autoAlpha: 0 },
-					{
-						duration: 1.75,
-						x: 0,
-						y: 0,
-						autoAlpha: 1,
-						ease: 'expo',
-						overwrite: 'auto',
-					}
-				);
-			}
+          if (scrollY > sectionTop && scrollY < sectionTop + sectionHeight) {
+            document.querySelector(`.${sectionId}`).classList.add("active");
+          } else {
+            document.querySelector(`.${sectionId}`).classList.remove("active");
+          }
+        });
+      });
+      function animateFrom(elem, direction) {
+        direction = direction || 1;
+        var x = 0,
+          y = direction * 100;
+        if (elem.classList.contains("gs_reveal_fromLeft")) {
+          x = -100;
+          y = 0;
+        } else if (elem.classList.contains("gs_reveal_fromRight")) {
+          x = 100;
+          y = 0;
+        }
+        elem.style.transform = "translate(" + x + "px, " + y + "px)";
+        elem.style.opacity = "0";
+        gsap.fromTo(
+          elem,
+          { x: x, y: y, autoAlpha: 0 },
+          {
+            duration: 1.75,
+            x: 0,
+            y: 0,
+            autoAlpha: 1,
+            ease: "expo",
+            overwrite: "auto",
+          }
+        );
+      }
 
-			function hide(elem) {
-				gsap.set(elem, { autoAlpha: 0 });
-			}
+      function hide(elem) {
+        gsap.set(elem, { autoAlpha: 0 });
+      }
 
-			document.addEventListener('DOMContentLoaded', function () {
-				gsap.registerPlugin(ScrollTrigger);
+      document.addEventListener("DOMContentLoaded", function () {
+        gsap.registerPlugin(ScrollTrigger);
 
-				gsap.utils.toArray('.gs_reveal').forEach(function (elem) {
-					hide(elem); // assure that the element is hidden when scrolled into view
+        gsap.utils.toArray(".gs_reveal").forEach(function (elem) {
+          hide(elem); // assure that the element is hidden when scrolled into view
 
-					ScrollTrigger.create({
-						trigger: elem,
-						markers: false,
-						onEnter: function () {
-							animateFrom(elem);
-						},
-						onEnterBack: function () {
-							animateFrom(elem, -1);
-						},
-						onLeave: function () {
-							hide(elem);
-						}, // assure that the element is hidden when scrolled into view
-					});
-				});
-			});
+          ScrollTrigger.create({
+            trigger: elem,
+            markers: false,
+            onEnter: function () {
+              animateFrom(elem);
+            },
+            onEnterBack: function () {
+              animateFrom(elem, -1);
+            },
+            onLeave: function () {
+              hide(elem);
+            }, // assure that the element is hidden when scrolled into view
+          });
+        });
+      });
 
-			// section third
-		</script>
-	</body>
+      // section third
+    </script>
+  </body>
 </html>
