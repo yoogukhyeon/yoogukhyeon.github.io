@@ -504,8 +504,14 @@ header .navigation > li:hover:after {
   overflow: hidden;
   background: #ffffff;
   box-shadow: 1px 1px 5px 1px #cccccc;
-  /*   transition: 0.3s; */
+  transition: all 0.5s ease-in-out;
 }
+
+.card:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+
 .featured-image-container .card {
   padding: 20px;
   height: 114px;
@@ -550,7 +556,7 @@ img {
 }
 .gs_reveal > li {
   line-height: 27px;
-  word-break: keep-all;
+  word-break: break-all;
 }
 .gs_reveal > li > a {
   cursor: pointer;
@@ -681,8 +687,13 @@ img {
   height: auto;
   box-shadow: 4px 4px 15px rgb(0 0 0 / 15%);
   cursor: pointer;
+  transition: all 0.5 ease-in-out;
 }
 
+.side_img_wrap > ul > li:hover {
+  transform: scale(1.1);
+  transition: all 0.5 ease-in-out;
+}
 .side_info > ul {
   display: flex;
   flex-direction: column;
