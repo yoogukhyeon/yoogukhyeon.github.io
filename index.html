@@ -42,8 +42,24 @@
       </header>
       <div class="content">
         <div class="text_box" data-aos="zoom-in-up" data-aos-duration="2200">
-          <div class="profile">
-            <img src="./img/profile_p.jpg" alt="profile" />
+          <div class="profile_wrap">
+            <div class="profile">
+              <img src="./img/profile_p.jpg" alt="profile" />
+            </div>
+            <ul>
+              <li>
+                <img src="./img/1564504_email_letter_mail_message_icon.png" alt="email" />
+                <a href="#"><span>: rnrgus5897@gmail.com</span></a>
+              </li>
+              <li>
+                <img src="./img/8546939_git_square_icon.png" alt="git" />
+                <a href="https://github.com/yoogukhyeon" target="_blank"><span>: https://github.com/yoogukhyeon</span></a>
+              </li>
+              <li>
+                <img src="./img/tistory.png" alt="tistory" />
+                <a href="https://cometruedream.tistory.com" target="_blank"><span>: https://cometruedream.tistory.com</span></a>
+              </li>
+            </ul>
           </div>
           <h2 id="title">유국현</h2>
           <p id="text">
@@ -136,7 +152,7 @@
       </div>
       <ul class="sci" data-aos="zoom-in-up" data-aos-offset="-100" data-aos-duration="2300">
         <li>
-          <a href="https://cometruedream.tistory.com/" target="_blank"><img src="./img/tistory_p.svg" alt="tistory" /></a>
+          <a href="https://cometruedream.tistory.com" target="_blank"><img src="./img/tistory_p.svg" alt="tistory" /></a>
         </li>
         <li>
           <a href="https://github.com/yoogukhyeon" target="_blank"><img src="./img/git_p.svg" alt="git" /></a>
@@ -363,7 +379,7 @@
     <section id="sec3" class="sec_3">
       <div>
         <h1 class="side_title">Side Projects</h1>
-        <div class="side_wrap">
+        <div class="side_wrap" onclick="beforeWorking();">
           <h2 class="side_sub_title" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
             커뮤니티 <span>(운영)</span>
           </h2>
@@ -504,7 +520,7 @@
             <div class="certi_info">
               <div class="certi_date featured_sub_title">2021.03</div>
               <div class="certi_txt featured_title">
-                <em>TOEIC(Speaking) 6급</em>
+                <em>TOEIC(Speaking) 7급</em>
                 <span class="featured_from">TOEIC</span>
               </div>
             </div>
@@ -513,7 +529,7 @@
             <div class="certi_info">
               <div class="certi_date featured_sub_title">2021.02</div>
               <div class="certi_txt featured_title">
-                <em>TOEIC 760점</em>
+                <em>TOEIC 860점</em>
                 <span class="featured_from">TOEIC</span>
               </div>
             </div>
@@ -522,7 +538,7 @@
             <div class="certi_info">
               <div class="certi_date featured_sub_title">2020. 12</div>
               <div class="certi_txt featured_title">
-                <em>TOEFL(iBT) 67점</em>
+                <em>TOEFL(iBT) 77점</em>
                 <span class="featured_from">TOEFL</span>
               </div>
             </div>
@@ -531,9 +547,32 @@
             <div class="certi_info">
               <div class="certi_date featured_sub_title">2020.10</div>
               <div class="certi_txt featured_title">
-                <em>TOEFL(CBT) 510점</em>
+                <em>TOEFL(CBT) 610점</em>
                 <span class="featured_from">TOEIC</span>
               </div>
+            </div>
+          </li>
+        </ul>
+
+        <h1 class="side_title side_second_title">해외경험</h1>
+        <ul class="certi_box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+          <li>
+            <div class="certi_info">
+              <div class="certi_date featured_sub_title">미국</div>
+              <div class="certi_txt featured_title">
+                <span class="featured_from">3년간의 미국생활은 처음으로 IT라는 분야를 접할수 있었던 기회 였으며 나자신에서 세상을 보는 눈을 넓힐 기회를 주었고 언어적인 능력을 향상시킬수 있었던 시간이였습니다.  다양한 문화와 사람들을 접하며 다양성을 존중하고 더 나아가 저를 글로벌한 마인드를 쌓을수 있었습니다.
+
+                </span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="certi_info">
+              <div class="certi_date featured_sub_title">중국</div>
+              <div class="certi_txt featured_title">
+                <span class="featured_from">중학교시절 2년간 경험은 새로운 사람들과 어울리며 존중하는 방법을 배울수 있었던 경험이였습니다. 저의 언어적인 능력을 향상시킬수 있었고 독립성과 자립심을 기를수 있었습니다.</span>
+              </div>
+            </div>
             </div>
           </li>
         </ul>
@@ -618,14 +657,6 @@
             logo[0].style.color = "#fff";
             // toggle[0].style.filter = "invert(0)";
           }
-        } else if (window.innerWidth < 400) {
-          if (scrollLocation > 350) {
-            logo[0].style.color = "#161616";
-            // toggle[0].style.filter = "invert(1)";
-          } else {
-            logo[0].style.color = "#161616";
-            // toggle[0].style.filter = "invert(0)";
-          }
         } else {
           logo[0].style.color = "#161616";
           if (scrollLocation > circle.offsetHeight - 200) {
@@ -703,7 +734,10 @@
         });
       });
 
-      // section third
+      //작업전
+      function beforeWorking() {
+        alert("작업전!!!!!!!!!!!!!!!!");
+      }
     </script>
   </body>
 </html>

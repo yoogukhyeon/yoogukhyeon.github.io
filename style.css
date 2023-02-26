@@ -110,11 +110,39 @@ header .navigation > li:hover:after {
   margin-right: 20px;
 }
 
+.profile_wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 35px;
+}
+
+.profile_wrap > ul > li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.profile_wrap > ul > li > a > span {
+  margin-left: 5px;
+  font-size: 13px;
+  line-height: 19px;
+}
+.profile_wrap > ul > li > a {
+  letter-spacing: 0 !important;
+}
+
+.profile_wrap > ul > li > img {
+  width: 18px;
+  height: 18px;
+}
 .content .text_box .profile {
   overflow: hidden;
   /* margin: 0 auto; */
-  max-width: 210px;
-  height: 210px;
+  width: 100%;
+  max-width: 190px;
+  height: 190px;
   border-radius: 50%;
   border: 1px solid #76d8ff;
   background-color: #76d8ff;
@@ -262,6 +290,12 @@ header .navigation > li:hover:after {
   padding-top: 0 !important;
 }
 
+@media (max-width: 1386px) {
+  .profile_wrap {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 1024px) {
   .featured_link {
     font-size: 14px !important;
@@ -314,6 +348,13 @@ header .navigation > li:hover:after {
   @keyframes animateCircel {
     50% {
       clip-path: circle(70% at right -45%);
+    }
+  }
+
+  @media (max-width: 350px) {
+    .profile_wrap > ul > li > a > span {
+      font-size: 12px;
+      line-height: 18px;
     }
   }
 
@@ -405,7 +446,7 @@ header .navigation > li:hover:after {
 
 @media (max-width: 441px) {
   .sec_1 .circle {
-    clip-path: circle(70% at right -30%);
+    clip-path: circle(70% at right -40%);
   }
 
   @keyframes animateCircel {
@@ -525,7 +566,7 @@ img {
 }
 
 .header-section {
-  margin: 120px auto;
+  margin: 0 auto 120px;
   color: #161616;
   font-size: 35px;
   line-height: 41px;
@@ -762,7 +803,7 @@ img {
 
 .certi_date {
   flex: 1;
-  text-align: right;
+  text-align: center;
 }
 
 .certi_txt {
