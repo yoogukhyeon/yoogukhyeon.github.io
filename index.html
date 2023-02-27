@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume: Yoo Guk Hyeon</title>
 
+    <meta property="og:title" content="개발자 포트폴리오" />
+    <meta name="description" content="개발자 이력서" />
+    <meta property="og:description" content="개발자 이력서" />
+    <link rel="canonical" href="https://yoogukhyeon.github.io" />
+    <meta property="og:url" content="https://yoogukhyeon.github.io/" />
+    <meta property="og:site_name" content="개발자 포트폴리오" />
+    <meta property="og:type" content="website" />
+
     <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
@@ -30,9 +38,9 @@
   <body>
     <section id="sec1" class="sec_1">
       <div class="circle" data-aos="fade-down-left" data-aos-duration="1800"></div>
+
       <header data-aos="zoom-in-up" data-aos-duration="2200">
-        <a href="#" class="logo">My Portfolio<!-- <img src="./images/logo.png" alt="logo" class="logo" /> --></a>
-        <!-- <div class="toggle" onclick="toggleMenu()"></div> -->
+        <a href="#" class="logo">My Portfolio</a>
         <ul class="navigation">
           <li class="sec1" onclick="handleNav(1);">Home</li>
           <li class="sec2" onclick="handleNav(2);">Project</li>
@@ -40,6 +48,7 @@
           <li class="sec4" onclick="handleNav(4);">Certificate</li>
         </ul>
       </header>
+
       <div class="content">
         <div class="text_box" data-aos="zoom-in-up" data-aos-duration="2200">
           <div class="profile_wrap">
@@ -97,11 +106,14 @@
             <span>CSS3</span>
           </div>
           <h2 id="sub_title">Interasting</h2>
+
           <div class="development">
             <span>Java</span>
             <span>Spring Boot</span>
+            <span>Oracle</span>
             <span>Redis</span>
           </div>
+
           <div>
             <div class="swiper mySwiper">
               <div class="swiper-wrapper">
@@ -139,7 +151,7 @@
                   <img src="./img/jquery_p.png" alt="사진10" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="./img/HTML5_p.png" alt="사진11" />
+                  <img src="./img/html5_p.png" alt="사진11" />
                 </div>
                 <div class="swiper-slide">
                   <img src="./img/css_p.jpg" alt="사진12" />
@@ -148,8 +160,10 @@
               <div class="swiper-pagination"></div>
             </div>
           </div>
+
         </div>
       </div>
+
       <ul class="sci" data-aos="zoom-in-up" data-aos-offset="-100" data-aos-duration="2300">
         <li>
           <a href="https://cometruedream.tistory.com" target="_blank"><img src="./img/tistory_p.svg" alt="tistory" /></a>
@@ -161,6 +175,11 @@
           <a href="https://www.instagram.com/dbrnrgusdlek22" target="_blank"><img src="./img/instagram.png" alt="instagram" /></a>
         </li>
       </ul>
+
+      <div class='arrow' onclick='goToTop();'>
+        <span><img src="./img/up-arrow.png" alt="arrow"></span>
+      </div>
+
     </section>
 
     <section id="sec2" class="sec_2">
@@ -379,6 +398,7 @@
     <section id="sec3" class="sec_3">
       <div>
         <h1 class="side_title">Side Projects</h1>
+
         <div class="side_wrap" onclick="beforeWorking();">
           <h2 class="side_sub_title" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
             커뮤니티 <span>(운영)</span>
@@ -452,11 +472,14 @@
             </div>
           </div>
         </div>
+
       </div>
     </section>
+
     <section id="sec4" class="sec_4">
       <div class="certi_wrap">
         <h1 class="side_title">My Certificate</h1>
+
         <ul class="certi_box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
           <li>
             <div class="certi_info">
@@ -576,20 +599,20 @@
             </div>
           </li>
         </ul>
+        
       </div>
     </section>
     <div class="footer">
+
       <ul>
         <li>Thank you for watching my resume</li>
         <li>Contact me</li>
         <li>The resume from Yoo Guk Hyeon</li>
         <li>Version 1.0.1</li>
       </ul>
-    </div>
-    <!-- <section class="sec_fifx">
-			<div>second</div>
-		</section> -->
 
+    </div>
+ 
     <!-- Initialize Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -641,21 +664,24 @@
       };
 
       const sectionAll = document.querySelectorAll("section[id]");
-
+      const logo = document.querySelectorAll(".logo");
+      
+      if (window.innerWidth < 583) {
+        logo[0].style.color = "#fff";
+      } else {
+        logo[0].style.color = "#161616";
+      }
+      
       document.addEventListener("scroll", function (e) {
         const scrollLocation = document.documentElement.scrollTop;
         const circle = document.querySelector(".circle");
         const navigation = document.querySelectorAll(".navigation");
-        const logo = document.querySelectorAll(".logo");
-        // const toggle = document.querySelectorAll(".toggle");
 
-        if (window.innerWidth < 500) {
+        if (window.innerWidth < 580) {
           if (scrollLocation > 350) {
             logo[0].style.color = "#161616";
-            // toggle[0].style.filter = "invert(1)";
           } else {
             logo[0].style.color = "#fff";
-            // toggle[0].style.filter = "invert(0)";
           }
         } else {
           logo[0].style.color = "#161616";
@@ -716,7 +742,7 @@
         gsap.registerPlugin(ScrollTrigger);
 
         gsap.utils.toArray(".gs_reveal").forEach(function (elem) {
-          hide(elem); // assure that the element is hidden when scrolled into view
+          hide(elem); 
 
           ScrollTrigger.create({
             trigger: elem,
@@ -729,7 +755,7 @@
             },
             onLeave: function () {
               hide(elem);
-            }, // assure that the element is hidden when scrolled into view
+            }, 
           });
         });
       });
@@ -737,6 +763,14 @@
       //작업전
       function beforeWorking() {
         alert("작업전!!!!!!!!!!!!!!!!");
+      }
+
+      function goToTop() {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth",
+        });
       }
     </script>
   </body>
