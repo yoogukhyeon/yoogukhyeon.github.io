@@ -308,30 +308,26 @@ header .navigation > li:hover:after {
 	background-color: #222;
 	padding: 10px;
 	cursor: pointer;
-	position: relative;
 }
 
 .arrow > span > img {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
+	transform: translateY(3px);
 	color: #fff;
 	width: 25px;
 	height: 25px;
 	filter: invert(1);
-	animation: scroll 1s ease-in-out infinite;
+	animation: scrollUp 1s ease-in-out infinite;
 }
 
-@keyframes scroll {
+@keyframes scrollUp {
 	0% {
-		top: 45%;
+		transform: translateY(1px);
 	}
 	50% {
-		top: 51%;
+		transform: translateY(3px);
 	}
 	100% {
-		top: 45%;
+		transform: translateY(1px);
 	}
 }
 /*  session 2 */
@@ -897,12 +893,13 @@ img {
 	}
 
 	.sec_1 .circle {
-		clip-path: circle(70% at right -50%);
+		clip-path: circle(70% at right -45%);
+		animation: animateCircel 5s linear infinite;
 	}
 
 	@keyframes animateCircel {
 		50% {
-			clip-path: circle(70% at right -55%);
+			clip-path: circle(70% at right -48%);
 		}
 	}
 }
