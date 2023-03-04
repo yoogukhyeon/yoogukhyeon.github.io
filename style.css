@@ -110,6 +110,10 @@ header .navigation > li:hover:after {
   align-items: center;
 }
 
+.typed-cursor {
+  color: #afabab;
+}
+
 .content .text_box {
   position: relative;
   max-width: 800px;
@@ -431,6 +435,7 @@ img {
   line-height: 32px;
   font-weight: 600;
   letter-spacing: 0.5px;
+  height: 40px;
 }
 
 .featured_title > li + li {
@@ -649,6 +654,7 @@ img {
 
   .featured_sub_title {
     font-size: 14px;
+    line-height: 26px;
   }
 
   .footer > ul > li {
