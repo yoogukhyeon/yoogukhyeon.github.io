@@ -460,6 +460,9 @@ img {
 
 .gs_reveal > li > b {
   font-weight: 500;
+  font-size: 18px;
+  color: #161616;
+  line-height: 24px;
 }
 
 /*  session 4 */
