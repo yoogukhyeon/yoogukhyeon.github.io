@@ -929,3 +929,7 @@ img {
 		}
 	}
 }
+
+.feature_right {
+	transform: none !important;
+}
